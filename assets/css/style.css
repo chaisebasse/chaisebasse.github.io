@@ -1,6 +1,8 @@
 /* scss */
 :root {
---my-grey: rgb(33, 33, 33)
+  --my-grey: rgb(33, 33, 33);
+  --my-light-grey: rgb(46, 46, 46);
+  --my-blue: #5CB8E4;
 }
 /* /scss */
 
@@ -55,6 +57,7 @@ main {
 .navbar {
   background: var(--my-grey);
   position: sticky;
+  border-bottom: 1px solid var(--my-blue);
 }
 
 .navbar > .container-fluid {
@@ -84,6 +87,7 @@ main {
   height: 100px;
   padding: 0px 50px;
   color: rgba(255, 255, 255, 0.623);
+  border-top: 1px solid var(--my-blue);
 }
 .footer-links {
   display: flex;
@@ -122,15 +126,29 @@ main {
   background: var(--my-grey);
   border-radius: 15px;
   min-height: calc(100vh - 87px - 100px);
-  border: 1px solid #a4a4a4;
+  border: 1px solid var(--my-blue);
   padding: 10px;
   width: 25%;
+  justify-content: center;
+}
+
+.sidebar-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .owner-title {
   display: inline-block;
   padding: 4px;
   border-radius: 7px;
+  width: fit-content;
+  background-color: var(--my-light-grey);
+  font-size: smaller;
+  padding-top: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #a4a4a4;
 }
 
 .contacts-item {
@@ -160,7 +178,7 @@ main {
   background: var(--my-grey);
   border-radius: 15px;
   min-height: calc(100vh - 87px - 100px);
-  border: 1px solid #a4a4a4;
+  border: 1px solid var(--my-blue);
   padding: 10px;
   width: 75%;
 }
@@ -169,7 +187,9 @@ main {
 /* ABOUT */
 .about .article-title {
   margin-bottom: 15px;
-  background-color: #ff0000;
+  width: fit-content;
+  border-bottom: 3px solid #5CB8E4;
+  padding-bottom: 5px;
 }
 
 .about-text {
