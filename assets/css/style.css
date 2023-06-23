@@ -2,7 +2,12 @@
 :root {
   --my-grey: rgb(33, 33, 33);
   --my-light-grey: rgb(46, 46, 46);
+  --lighter-grey: #ffffffb5;
   --my-blue: #5CB8E4;
+}
+
+::selection {
+  background-color: var(--my-blue);
 }
 /* /scss */
 
@@ -25,6 +30,7 @@ main {
   align-items: flex-start;
   gap: 25px;
 }
+
 
 
 /* AVATAR */
@@ -151,12 +157,17 @@ main {
   color: #a4a4a4;
 }
 
+.owner-name {
+  color: var(--lighter-grey);
+  margin-bottom: 15px
+}
+
 .contacts-item {
   margin-top: 25px;
 }
 
 .contact-title {
-  color: #a4a4a4;
+  color: var(--lighter-grey);
   padding: 0px;
   margin: 1px;
 }
@@ -188,14 +199,13 @@ main {
 .about .article-title {
   margin-bottom: 15px;
   width: fit-content;
-  border-bottom: 3px solid #5CB8E4;
+  border-bottom: 3px solid var(--my-blue);
   padding-bottom: 5px;
+  color: var(--lighter-grey);
 }
 
 .about-text {
   color: var(--light-gray);
-  font-size: var(--fs-6);
-  font-weight: var(--fw-300);
   line-height: 1.6;
 }
 
