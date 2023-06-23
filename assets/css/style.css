@@ -1,6 +1,13 @@
 /* scss */
 :root {
---my-grey: rgb(33, 33, 33)
+  --my-grey: rgb(33, 33, 33);
+  --my-light-grey: rgb(46, 46, 46);
+  --lighter-grey: #ffffffb5;
+  --my-blue: #5CB8E4;
+}
+
+::selection {
+  background-color: var(--my-blue);
 }
 /* /scss */
 
@@ -23,6 +30,7 @@ main {
   align-items: flex-start;
   gap: 25px;
 }
+
 
 
 /* AVATAR */
@@ -55,6 +63,7 @@ main {
 .navbar {
   background: var(--my-grey);
   position: sticky;
+  border-bottom: 1px solid var(--my-blue);
 }
 
 .navbar > .container-fluid {
@@ -81,9 +90,10 @@ main {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 100px;
+  height: 84px;
   padding: 0px 50px;
   color: rgba(255, 255, 255, 0.623);
+  border-top: 1px solid var(--my-blue);
 }
 .footer-links {
   display: flex;
@@ -122,15 +132,34 @@ main {
   background: var(--my-grey);
   border-radius: 15px;
   min-height: calc(100vh - 87px - 100px);
-  border: 1px solid #a4a4a4;
+  border: 1px solid var(--my-blue);
   padding: 10px;
   width: 25%;
+  justify-content: center;
+}
+
+.sidebar-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.owner-name {
+  color: var(--lighter-grey);
+  margin-bottom: 15px
 }
 
 .owner-title {
   display: inline-block;
   padding: 4px;
   border-radius: 7px;
+  width: fit-content;
+  background-color: var(--my-light-grey);
+  font-size: smaller;
+  padding-top: 4px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #a4a4a4;
 }
 
 .contacts-item {
@@ -138,7 +167,7 @@ main {
 }
 
 .contact-title {
-  color: #a4a4a4;
+  color: var(--lighter-grey);
   padding: 0px;
   margin: 1px;
 }
@@ -160,24 +189,44 @@ main {
   background: var(--my-grey);
   border-radius: 15px;
   min-height: calc(100vh - 87px - 100px);
-  border: 1px solid #a4a4a4;
+  border: 1px solid var(--my-blue);
   padding: 10px;
   width: 75%;
 }
-/* /MAIN-CONTENT */
 
 /* ABOUT */
 .about .article-title {
   margin-bottom: 15px;
-  background-color: #ff0000;
+  width: fit-content;
+  border-bottom: 3px solid var(--my-blue);
+  padding-bottom: 5px;
+  color: var(--lighter-grey);
 }
 
 .about-text {
   color: var(--light-gray);
-  font-size: var(--fs-6);
-  font-weight: var(--fw-300);
   line-height: 1.6;
 }
 
 .about-text p { margin-bottom: 15px; }
 /* /ABOUT */
+
+/* SERVICES */
+.services-all {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+}
+
+.service {
+  background-color: hsl(0, 0%, 14%);
+  width: fit-content;
+  border: 1px solid var(--lighter-grey);
+  border-radius: 7px;
+  margin: 6px;
+  padding: 5px;
+  box-shadow: 0px 0px 10px #000000;
+}
+/* /SERVICES */
+
+/* /MAIN-CONTENT */
