@@ -31,6 +31,19 @@ main {
   gap: 25px;
 }
 
+article {
+  display: none;
+}
+
+article.active {
+  display: block;
+}
+
+button {
+  background: var(--my-grey);
+  border: 1px solid var(--my-grey);
+}
+
 
 
 /* AVATAR */
