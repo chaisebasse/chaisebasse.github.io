@@ -31,17 +31,21 @@ main {
   gap: 25px;
 }
 
-article {
-  display: none;
-}
+article { display: none; }
 
-article.active {
+.active {
   display: block;
 }
 
-button {
+.button {
   background: var(--my-grey);
   border: 1px solid var(--my-grey);
+}
+
+.button :target {
+  background: var(--my-grey);
+  border: 1px solid var(--my-grey);
+  color: #ff0000;
 }
 
 
