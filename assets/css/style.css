@@ -37,9 +37,12 @@ article { display: none; }
   display: block;
 }
 
-.button {
-  background: var(--my-grey);
-  border: 1px solid var(--my-grey);
+button {
+  font: inherit;
+  background: none;
+  border: none;
+  text-align: left;
+  cursor: pointer;
 }
 
 .button :target {
