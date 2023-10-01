@@ -232,7 +232,6 @@ main {
 
 .main-content {
   top: 60px;
-  max-height: max-content;
   height: 100%;
   margin-top: 13px;
   margin-bottom: 13px;
@@ -240,7 +239,7 @@ main {
   z-index: 1;
   background: var(--my-grey);
   border-radius: 15px;
-  min-height: calc(100vh - 87px - 100px);
+  height: calc(100vh - 87px - 100px);
   border: 1px solid var(--my-blue);
   padding: 10px;
   width: 75%;
@@ -434,5 +433,33 @@ article.active {
   margin-bottom: 10px;
 }
 /* /RESUME */
+
+/* SCROLLBAR */
+.has-scrollbar::-webkit-scrollbar {
+  max-height: fit-content !important;
+  min-height: fit-content !important;
+  overflow: scroll !important;
+  background-color: #5CB8E4 !important;
+}
+
+.has-scrollbar::-webkit-scrollbar:vertical{
+  width: 5px !important;
+}
+
+.has-scrollbar::-webkit-scrollbar-track {
+  background: var(--my-light-grey);
+  border-radius: 5px;
+}
+
+.has-scrollbar::-webkit-scrollbar-thumb {
+  background: var(--my-blue);
+  border-radius: 5px;
+}
+
+.has-scrollbar::-webkit-scrollbar-button {
+  width: 20px;
+}
+/* /SCROLLBAR */
+
 
 /* /MAIN-CONTENT */
