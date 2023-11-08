@@ -435,15 +435,19 @@ article.active {
 /* /RESUME */
 
 /* SCROLLBAR */
+
+.has-scrollbar {
+  display: block;
+  overflow: auto;
+  height: 440px;
+}
+
 .has-scrollbar::-webkit-scrollbar {
-  max-height: fit-content !important;
-  min-height: fit-content !important;
-  overflow: scroll !important;
-  background-color: #5CB8E4 !important;
+  width: 5px; /* Width of the scrollbar */
 }
 
 .has-scrollbar::-webkit-scrollbar:vertical{
-  width: 5px !important;
+  width: 5px;
 }
 
 .has-scrollbar::-webkit-scrollbar-track {
@@ -454,10 +458,6 @@ article.active {
 .has-scrollbar::-webkit-scrollbar-thumb {
   background: var(--my-blue);
   border-radius: 5px;
-}
-
-.has-scrollbar::-webkit-scrollbar-button {
-  width: 20px;
 }
 /* /SCROLLBAR */
 
