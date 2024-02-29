@@ -27,6 +27,19 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!--
+      - Leaflet opensource map
+    -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+    <!--
+      - This needs to be after the link above
+    -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
   </head>
 
   <body>
@@ -120,8 +133,8 @@
                 <p>I have worked on a few projects, which you can see in the "Portfolio" tab, usually built with Ruby on Rails</p>
               </div>
               <div class="service">
-                <h5>Fitness Programs</h5>
-                <p>Work in Progress</p>
+                <h5>Lower Level Programming</h5>
+                <p>I enjoy working on low-level programming projects, especially in C</p>
               </div>
               <div class="service">
                 <h5>Automations</h5>
@@ -188,10 +201,10 @@
 
                   <h4 class="h4 timeline-item-title">Université Paris-Nanterre</h4>
 
-                  <span>2023-2026</span>
+                  <span>2023 — Present</span>
 
                   <p class="timeline-text">
-                    Double Licence Eco-Gestion, Mathématiques-Informatiques appliquées aux Sciences Humaines et Sociales
+                    Double Undergraduate Degree in Economics-Management and Mathematics-Computer Science
                   </p>
 
                 </li>
@@ -203,7 +216,7 @@
                   <span>April-June 2023</span>
 
                   <p class="timeline-text">
-                    RNCP level 6 diploma in Web Development <br>
+                    RNCP level 6 diploma in Web Development<br>
                   </p>
 
                 </li>
@@ -254,7 +267,7 @@
 
                   <h4 class="h4 timeline-item-title">Association Tirelires d’Avenir</h4>
 
-                  <span>2022-2023</span>
+                  <span>sept 2022-march 2023</span>
 
                   <p class="timeline-text">
                     Service Civique in a French association helping isolated young underprivileged adults (18-30 years old) establishing social links <br>
@@ -306,15 +319,15 @@
 
                 <ul class="it-skills">
                   <li>
-                    <p>Good knowledge of <strong style="color: var(--my-light-blue);">Microsoft Office</strong> applications</p>
-                  </li>
-
-                  <li>
                     <p>Proficient use of Airtable and Google applications</p>
                   </li>
 
                   <li>
-                    <p><strong style="color: var(--my-light-blue);">Ruby on Rails</strong> (Intermediate), Python (Beginner)</p>
+                    <p>Good knowledge of <strong style="color: var(--my-light-blue);">Linux</strong> OS and <strong style="color: var(--my-light-blue);">Git</strong></p>
+                  </li>
+
+                  <li>
+                    <p><strong style="color: var(--my-light-blue);">Ruby on Rails</strong> (Intermediate), <strong>C</strong> (beginner)</p>
                   </li>
                 </ul>
 
@@ -343,6 +356,15 @@
             </section>
           </div>
 
+        </article>
+
+        <article class="contact" data-page="contact">
+          <header>
+            <h2 class="article-title"><strong>Contact</strong></h2>
+          </header>
+
+          <div id="map"></div>
+          <p>If you need to report a bug with the map, please visit : https://www.openstreetmap.org/fixthemap</p>
         </article>
 
       </div>

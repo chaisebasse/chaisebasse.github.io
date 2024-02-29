@@ -435,31 +435,35 @@ article.active {
 /* /RESUME */
 
 /* SCROLLBAR */
-
 .has-scrollbar {
-  display: block;
   overflow: auto;
-  height: 440px;
+  height: 59.5vh;
 }
 
 .has-scrollbar::-webkit-scrollbar {
-  width: 5px; /* Width of the scrollbar */
+  width: 5vw;  /* Width of the scrollbar */
 }
 
 .has-scrollbar::-webkit-scrollbar:vertical{
-  width: 5px;
+  width: 0.4vw;
 }
 
 .has-scrollbar::-webkit-scrollbar-track {
   background: var(--my-light-grey);
-  border-radius: 5px;
+  border-radius: 5vh;
 }
 
 .has-scrollbar::-webkit-scrollbar-thumb {
   background: var(--my-blue);
-  border-radius: 5px;
+  border-radius: 5vh;
 }
 /* /SCROLLBAR */
+
+/* CONTACT */
+#map {
+  height: 300px;
+}
+/* /CONTACT */
 
 
 /* /MAIN-CONTENT */
