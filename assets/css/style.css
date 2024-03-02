@@ -258,8 +258,8 @@ article.active {
   padding-bottom: 5px;
   color: var(--lighter-grey);
 }
-/* ABOUT */
 
+/* ABOUT */
 .about-text {
   color: var(--light-gray);
   line-height: 1.6;
@@ -460,8 +460,31 @@ article.active {
 /* /SCROLLBAR */
 
 /* CONTACT */
+.contact-content {
+  display: flex;
+}
+
+.contact-form-inputs {
+  display: flex;
+  flex-direction: column;
+}
+
+.small-input {
+  width: 20vh;
+  height: 4vh;
+}
+
+.test-one {
+  display: flex;
+}
+
+.large-input {
+  width: 55vh;
+}
+
 #map {
-  height: 300px;
+  height: 50vh;
+  width: 55vh;
 }
 /* /CONTACT */
 
