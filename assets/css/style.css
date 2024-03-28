@@ -470,21 +470,38 @@ article.active {
 }
 
 .small-input {
-  width: 20vh;
+  width: 30vh;
   height: 4vh;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-label {
+  color: var(--lighter-grey);
 }
 
 .test-one {
   display: flex;
+  justify-content: space-betwe
 }
 
 .large-input {
-  width: 55vh;
+  width: 65vh;
 }
 
 #map {
+  width: 30vh;
+  height: 30vh;
+  /* transition: width 0.5s, height 0.5s; for smooth transition */
+}
+
+#map.largeSize {
   height: 50vh;
-  width: 55vh;
+  width: 100%;
+  transition: width 1.5s, height 1.5s;
 }
 /* /CONTACT */
 

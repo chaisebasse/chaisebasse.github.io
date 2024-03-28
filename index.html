@@ -45,13 +45,6 @@
   <body>
     <div class="navbar navbar-expand-sm navbar-lewagon">
       <div class="container-fluid">
-        <!-- <a class="navbar-brand" href="#">
-          <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/logo.png" />
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button> -->
-
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto">
             <li class="nav-item active">
@@ -66,13 +59,6 @@
             <li class="nav-item">
               <button class="button nav-link text-white" data-nav-link>Contact</button>
             </li>
-            <!-- <li class="nav-item dropdown">
-              <img class="avatar dropdown-toggle" id="navbarDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" src="https://kitt.lewagon.com/placeholder/users/ssaunier" />
-              <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-              </div>
-            </li> -->
           </ul>
         </div>
       </div>
@@ -374,15 +360,22 @@
             <form class="contact-form container" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xbjnyqqr" method="post">
               <fieldset class="contact-form-inputs">
                 <div class="test-one">
-                  <label for="full-name"></label>
-                  <input class="small-input" type="text" name="name" placeholder="First and Last" required="">
-                  <label for="email-address"></label>
-                  <input class="small-input" type="email" name="_replyto" placeholder="email@domain.tld" required="">
+                  <div class="contact-info">
+                    <label class="contact-label" for="full-name">Full name</label>
+                    <input class="small-input" type="text" name="name" placeholder="First and Last" required="">
+                  </div>
+
+                  <div class="contact-info">
+                    <label class="contact-label" for="email-address">Email</label>
+                    <input class="small-input" type="email" name="_replyto" placeholder="email@domain.tld" required="">
+                  </div>
                 </div>
 
-                <label for="message">Message</label>
-                <textarea class="large-input" rows="5" name="message" placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla nullam quis risus." required=""></textarea>
-                <input class="large-input" type="hidden" name="_subject" value="Contact Form Submission">
+                <div>
+                  <label class="contact-label" for="message">Message</label>
+                  <textarea class="large-input" rows="5" name="message" placeholder="Type message..." required=""></textarea>
+                  <input class="large-input" type="hidden" name="_subject" value="Contact Form Submission">
+                </div>
               </fieldset>
               <input type="submit" value="Submit">
             </form>

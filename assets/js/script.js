@@ -18,9 +18,26 @@ for (let i = 0; i < navigationLinks.length; i++) {
   });
 }
 
-// Leaflet map
+// Leaflet map initialization
 var map = L.map('map').setView([48.858242, 2.29448], 13);
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
+
+// Resize the map after a slight delay to ensure proper initialization
+setTimeout(function() {
+  map.invalidateSize();
+}, 100);
+
+// Handling map resizing when contact button is clicked
+const contactButton = navigationLinks[navigationLinks.length - 1];
+const mapModify = document.getElementById('map');
+
+contactButton.addEventListener('click', function() {
+  mapModify.classList.toggle('largeSize');
+  // After toggling the 'largeSize' class, resize the map after a slight delay
+  setTimeout(function() {
+    map.invalidateSize();
+  }, 100);
+});
