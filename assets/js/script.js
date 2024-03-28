@@ -35,7 +35,7 @@ const contactButton = navigationLinks[navigationLinks.length - 1];
 const mapModify = document.getElementById('map');
 
 contactButton.addEventListener('click', function() {
-  mapModify.classList.toggle('largeSize');
+  mapModify.classList.add('largeSize');
   // After toggling the 'largeSize' class, resize the map after a slight delay
   setTimeout(function() {
     map.invalidateSize();
