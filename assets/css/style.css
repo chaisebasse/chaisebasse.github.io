@@ -28,12 +28,24 @@ p {
   color: var(--lighter-grey);
 }
 
+a {
+  text-decoration: none;
+}
+
 button {
   font: inherit;
   background: none;
   border: none;
   text-align: left;
   cursor: pointer;
+}
+
+textarea {
+  color: var(--lighter-grey);
+}
+
+input {
+  color: var(--lighter-grey);
 }
 
 li :target {
@@ -118,8 +130,21 @@ data {
   flex-grow: 0;
 }
 
+.nav-link:focus {
+  outline: none;
+}
+
+.nav-link {
+  color: #ffffff;
+}
+
 .nav-link:hover {
-  color: #ff0000;
+  color: var(--my-light-blue);
+  transition: .25s ease;
+}
+
+.nav-link.active {
+  color: var(--my-blue);
 }
 
 .navbar-lewagon .navbar-brand img {
@@ -243,6 +268,7 @@ main {
   border: 1px solid var(--my-blue);
   padding: 10px;
   width: 75%;
+  max-width: 73.43%;
 }
 
 article { display: none; }
@@ -469,9 +495,19 @@ article.active {
   flex-direction: column;
 }
 
+.contact-form-inputs.container {
+  margin-right: 5px;
+  margin-left: 10px;
+}
+
 .small-input {
   width: 30vh;
-  height: 4vh;
+  height: 6vh;
+  padding-left: 8px;
+  border-radius: 10px;
+  background-color: var(--my-grey);
+  border: 1px solid rgb(110, 110, 110);
+  box-shadow: 0px 0px 7px #000000;
 }
 
 .contact-info {
@@ -485,23 +521,59 @@ article.active {
 
 .test-one {
   display: flex;
-  justify-content: space-betwe
+  justify-content: space-between;
+}
+
+.large-input-div {
+  margin-top: 10px;
 }
 
 .large-input {
-  width: 65vh;
+  width: 100%;
+  border-radius: 10px;
+  background-color: var(--my-grey);
+  border: 1px solid rgb(110, 110, 110);
+  box-shadow: 0px 0px 7px #000000;
+  padding-left: 8px;
+}
+
+.submit-button-div {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 10px;
+}
+
+.submit-button {
+  border-radius: 12px;
+  background-color: var(--my-grey);
+  color: var(--my-shady-blue);
+  height: 6vh;
+  border: 1px solid rgb(110, 110, 110);
+  box-shadow: 0px 0px 7px #000000;
+}
+
+.map-div {
+  display: flex;
+  flex-direction: column;
+  width: 100%
 }
 
 #map {
   width: 30vh;
   height: 30vh;
-  /* transition: width 0.5s, height 0.5s; for smooth transition */
+  border-radius: 10px;
 }
 
 #map.largeSize {
   height: 50vh;
   width: 100%;
-  transition: width 1.5s, height 1.5s;
+  transition: width 1s, height 1s;
+  border-radius: 10px;
+}
+
+#map-info {
+  font-size: 10px;
+  color: var(--lighter-grey);
 }
 /* /CONTACT */
 

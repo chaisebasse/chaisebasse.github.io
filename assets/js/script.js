@@ -19,7 +19,7 @@ for (let i = 0; i < navigationLinks.length; i++) {
 }
 
 // Leaflet map initialization
-var map = L.map('map').setView([48.858242, 2.29448], 13);
+var map = L.map('map').setView([48.858242, 2.34], 11);
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     maxZoom: 19,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
