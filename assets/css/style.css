@@ -460,8 +460,8 @@ article.active {
   margin-bottom: 0px;
 }
 
-.it-skills p {
-  margin-bottom: 10px;
+.important-skills {
+  color: var(--my-light-blue);
 }
 
 .other-activities p {
@@ -472,7 +472,7 @@ article.active {
 /* SCROLLBAR */
 .has-scrollbar {
   overflow: auto;
-  height: 59.5vh;
+  height: 68.5vh;
 }
 
 .has-scrollbar::-webkit-scrollbar {
