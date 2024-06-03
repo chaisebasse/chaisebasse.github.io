@@ -49,7 +49,7 @@
               <button class="button nav-link" data-nav-link>Portfolio</button>
             </li>
             <li class="nav-item">
-              <button class="button nav-link" data-nav-link>Resume</button>
+              <button class="button nav-link" data-nav-link>Projects</button>
             </li>
             <li class="nav-item">
               <button class="button nav-link" data-nav-link>Contact</button>
@@ -133,6 +133,18 @@
           <section class="projects">
             <ul class="project-list">
               <li class="project-item">
+                <a href="https://github.com/chaisebasse/TravelFlex" target=”_blank”>
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <i class="fa-regular fa-eye"></i>
+                    </div>
+
+                    <img src="assets/images/TravelFlex.jpg" alt="TravelFlex" loading="lazy">
+                  </figure>
+                </a>
+              </li>
+
+              <li class="project-item">
                 <a href="https://github.com/MartinBlld/la_grosse_grappe" target=”_blank”>
                   <figure class="project-img">
                     <div class="project-item-icon-box">
@@ -140,18 +152,6 @@
                     </div>
 
                     <img src="assets/images/La Grosse Grappe.jpg" alt="La Grosse Grappe" loading="lazy">
-                  </figure>
-                </a>
-              </li>
-
-              <li class="project-item">
-                <a href="https://github.com/chaisebasse/TravelFlex" target=”_blank”>
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <i class="fa-regular fa-eye"></i>
-                    </div>
-
-                    <img src="assets/images/TravelFlex.jpg" alt="La Grosse Grappe" loading="lazy">
                   </figure>
                 </a>
               </li>
@@ -167,96 +167,62 @@
                   </figure>
                 </a>
               </li>
+
+              <li class="project-item">
+                <a href="https://github.com/chaisebasse/custom_memory_allocator" target=”_blank”>
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <i class="fa-regular fa-eye"></i>
+                    </div>
+
+                    <img src="assets/images/Memory-allocator-thumbnail.jpg" alt="Memory Allocator" loading="lazy">
+                  </figure>
+                </a>
+              </li>
             </ul>
           </section>
         </article>
 
-        <article class="resume" data-page="resume">
-          <!-- <header>
-            <h2 class="article-title"><strong>Resume</strong></h2>
-          </header> -->
+        <article class="projects" data-page="projects">
+          <header>
+            <h2 class="article-title"><strong>Projects</strong></h2>
+          </header>
 
           <div class="container has-scrollbar">
-            <section class="skill">
-
-              <div class="title-wrapper">
-                <div class="icon-box">
-                  <i name="bolt-outline" class="fa-solid fa-bolt fa-lg" style="color: var(--my-blue);"></i>
-                </div>
-
-                <h3 class="h3">My Skills</h3>
-              </div>
-
-              <ol class="skill-list">
-                <li>
-                  <h5>IT</p>
-                </li>
-
-                <ul class="it-skills">
-                  <li>
-                    <p>Proficient use of Airtable, Google applications and Office Pack</p>
-                  </li>
-
-                  <li>
-                    <p>Good knowledge of <strong class="important-skills">Linux</strong> OS and <strong class="important-skills">Git</strong></p>
-                  </li>
-
-                  <li>
-                    <p><strong class="important-skills">Ruby on Rails</strong> (Intermediate), <strong>C</strong> (intermediate)</p>
-                  </li>
-                </ul>
-
-                <li>
-                  <h5>Languages</h5>
-                </li>
-
-                <ul>
-                  <li>
-                    <p>Fluent in <strong class="important-skills">French</strong>, <strong class="important-skills">English</strong>, <strong class="important-skills">Italian</strong></p>
-                    <!-- <span>Native</span> -->
-                  </li>
-
-                  <li>
-                    <p>Limited proficiency in <strong class="important-skills">Chinese</strong></p>
-                  </li>
-                </ul>
-              </ol>
-            </section>
-
             <section class="timeline">
               <div class="title-wrapper">
                 <div class="icon-box">
-                  <i name="book-outline" class="fa-solid fa-briefcase fa-lg" style="color: var(--my-blue);"></i>
+                  <i name="book-outline" class="fa-solid fa-globe fa-lg" style="color: var(--my-blue);"></i>
                 </div>
 
-                <h3 class="h3">Experience</h3>
+                <h3 class="h3">Web Development</h3>
               </div>
 
               <ol class="timeline-list">
                 <li class="timeline-item">
 
-                  <h4 class="h4 timeline-item-title">Association Tirelires d’Avenir</h4>
+                  <h4 class="h4 timeline-item-title">TravelFlex</h4>
 
-                  <span>sept 2022-march 2023</span>
+                  <span>Ruby on Rails</span>
 
                   <p class="timeline-text">
-                    Service Civique in a French association helping isolated young underprivileged adults (18-30 years old) establishing social links<br>
-                    Organised and animated the mentoring programme<br>
-                    Developed partnerships with associations, schools, companies
+                    Group project website that generates traveling ideas based on user-set criteria.<br>
+                    Ran ruby-openai (ruby gem for the OpenAI GPT-3 API) to generate ideas tailored to user needs. Scraped data from Le Routard travel guide website to provide description of the travel destination.<br>
+                    Used 5 models, among which the user (for accounts), travel (destination) and activitiy.
                   </p>
 
                 </li>
 
                 <li class="timeline-item">
 
-                  <h4 class="h4 timeline-item-title">Babysitting</h4>
+                  <h4 class="h4 timeline-item-title">La Grosse Grappe</h4>
 
-                  <span>2022 — 2023</span>
+                  <span>Ruby on Rails</span>
 
                   <p class="timeline-text">
-                    Babysitted kids from 3 to 11 years old, often all three at a time<br>
-                    Accompanied them back from school<br>
-                    Helped them with homework<br>
+                    Group project online platform for vineyard rental.<br>
+                    Marketplace app modeled as AirBnb. Made use of devise gem for user authentication and geocoder for precise localisation of vineyards, as well as mapbox API for map marking.<br>
+                    Structured with 3 models : user, grapevine (the vineyard itself) and booking.<br>
                   </p>
 
                 </li>
@@ -267,34 +233,38 @@
             <section class="timeline">
               <div class="title-wrapper">
                 <div class="icon-box">
-                  <i name="book-outline" class="fa-solid fa-book-open fa-lg" style="color: var(--my-blue);"></i>
+                  <i name="book-outline" class="fa-solid fa-computer fa-lg" style="color: var(--my-blue);"></i>
                 </div>
 
-                <h3 class="h3">Education</h3>
+                <h3 class="h3">System Software Development</h3>
               </div>
 
               <ol class="timeline-list">
 
                 <li class="timeline-item">
 
-                  <h4 class="h4 timeline-item-title">Université Paris-Nanterre</h4>
+                  <h4 class="h4 timeline-item-title">HTTP-Server</h4>
 
-                  <span>2023 — Present</span>
+                  <span>C</span>
 
                   <p class="timeline-text">
-                    Double Undergraduate Degree in Computer Science and Economics
+                    My first system programming project. Implemented a local HTTP server in C.<br>
+                    Discovered and understood the complexities of the HTTP protocol and web sockets, as well as the concept of buffers.<br>
+                    Built a simple HTML website to test the server.
                   </p>
 
                 </li>
 
                 <li class="timeline-item">
 
-                  <h4 class="h4 timeline-item-title">Le Wagon Bootcamp, Paris</h4>
+                  <h4 class="h4 timeline-item-title">Custom memory allocator</h4>
 
-                  <span>April-June 2023</span>
+                  <span>C</span>
 
                   <p class="timeline-text">
-                    RNCP level 6 diploma in Web Development<br>
+                    First time building a project deeply involved with memory. This allocator works like malloc.<br>
+                    Understood the intricacies of the various parts of memory, the static part, the stack and the heap.<br>
+                    Used sbrk instead of mmap to increase break point of the data segment. Understood the coalescing logic for fragmented blocks of memory in the heap.
                   </p>
 
                 </li>
@@ -351,7 +321,7 @@
     <div class="footer">
       <div class="footer-links">
         <a href="https://github.com/chaisebasse"><i class="fab fa-github"></i></a>
-        <a href=""><i class="fab fa-linkedin"></i></a>
+        <!-- <a href=""><i class="fab fa-linkedin"></i></a> -->
       </div>
       <div class="footer-copyright">
         My Portfolio <i class="fa-solid fa-pizza-slice"></i>

@@ -120,6 +120,7 @@ data {
   background: var(--my-grey);
   position: sticky;
   border-bottom: 1px solid var(--my-blue);
+  height: 5rem;
 }
 
 .navbar > .container-fluid {
@@ -147,19 +148,19 @@ data {
 .nav-link.active {
   color: var(--my-blue);
 }
-
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
-}
 /* /NAVBAR */
 
 /* FOOTER */
 .footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 5rem;
+
   background: var(--my-grey);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 84px;
   padding: 0px 50px;
   color: rgba(255, 255, 255, 0.623);
   border-top: 1px solid var(--my-blue);
@@ -265,7 +266,7 @@ main {
   z-index: 1;
   background: var(--my-grey);
   border-radius: 15px;
-  height: calc(100vh - 87px - 100px);
+  height: calc(100vh - 187px);
   border: 1px solid var(--my-blue);
   padding: 10px;
   width: 75%;
@@ -352,7 +353,9 @@ article.active {
   transition: 0.25s ease;
 }
 
-.project-item > a:hover .project-img::before { background: hsla(0, 0%, 0%, 0.5); }
+.project-item > a:hover .project-img::before {
+  background: hsla(0, 0%, 0%, 0.5);
+}
 
 .project-item-icon-box {
   --scale: 0.8;
@@ -376,15 +379,15 @@ article.active {
   opacity: 1;
 }
 
-.project-img img {
+.project-item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: 0.25s ease;
+  transition: filter 0.5s ease-in-out;
 }
 /* /PORTFOLIO */
 
-/* RESUME */
+/* PROJECTS */
 .timeline { margin-bottom: 30px; }
 
 .timeline .title-wrapper {
@@ -407,6 +410,10 @@ article.active {
   font-size: 14px;
   line-height: 1.3;
   margin-bottom: 7px;
+}
+
+.h4.timeline-item-title:hover {
+  text-decoration: underline;
 }
 
 .timeline-list span {
@@ -467,12 +474,13 @@ article.active {
 .other-activities p {
   margin-bottom: 10px;
 }
-/* /RESUME */
+/* /PROJECTS */
 
 /* SCROLLBAR */
 .has-scrollbar {
   overflow: auto;
-  height: 68.5vh;
+  height: calc(62vh);
+  margin-bottom: 20px;
 }
 
 .has-scrollbar::-webkit-scrollbar {
