@@ -6,11 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ermanno di Giulio - Personal Portfolio</title>
-
-    <!--
-      - favicon
-    -->
-    <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+    <link rel="icon" type="image/x-icon" href="assets/images/pizza-favicon.png">
 
     <!--
       - Bootstrap and Fontawesome
@@ -27,39 +23,38 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <!--
+      - Leaflet opensource map
+    -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+    <!--
+      - This needs to be after the link above
+    -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
   </head>
 
   <body>
     <div class="navbar navbar-expand-sm navbar-lewagon">
       <div class="container-fluid">
-        <!-- <a class="navbar-brand" href="#">
-          <img src="https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/logo.png" />
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button> -->
-
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav me-auto">
             <li class="nav-item active">
-              <button class="button nav-link text-white active" data-nav-link>About</button>
+              <button class="button nav-link active" data-nav-link>About</button>
             </li>
             <li class="nav-item">
-              <button class="button nav-link text-white" data-nav-link>Portfolio</button>
+              <button class="button nav-link" data-nav-link>Portfolio</button>
             </li>
             <li class="nav-item">
-              <button class="button nav-link text-white" data-nav-link>Resume</button>
+              <button class="button nav-link" data-nav-link>Projects</button>
             </li>
             <li class="nav-item">
-              <button class="button nav-link text-white" data-nav-link>Contact</button>
+              <button class="button nav-link" data-nav-link>Contact</button>
             </li>
-            <!-- <li class="nav-item dropdown">
-              <img class="avatar dropdown-toggle" id="navbarDropdown" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" src="https://kitt.lewagon.com/placeholder/users/ssaunier" />
-              <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="#">Action</a>
-                <a class="dropdown-item" href="#">Another action</a>
-              </div>
-            </li> -->
           </ul>
         </div>
       </div>
@@ -72,7 +67,7 @@
             Ermanno di Giulio
           </h3>
 
-          <h6 class="owner-title">Web Developer</h6>
+          <h6 class="owner-title">Programmer</h6>
         </div>
 
         <div class="sidebar-info_more">
@@ -99,18 +94,17 @@
 
       <div class="main-content">
 
-        <article class="about  active has-scrollbar" data-page="about">
+        <article class="about active" data-page="about">
           <header>
             <h2 class="article-title"><strong>About Me</strong></h2>
           </header>
 
           <section class="about-text">
-            <p>I'm a French and Italian student and freelancer, working as a junior web developer and studying economics and computer science.
-              During my free time, I enjoy working out in the gym, watching football and working on personal projects. <br></p>
+            <p>I'm a French and Italian junior undergraduate in economics and computer science.
+              During my free time, I enjoy playing sports, seeing friends and working on programming projects. <br></p>
 
-            <p>My job is to build your website so that it is functional and attractive.
-              Although I prefer backend with its logic and problem-solving, I am also able to create simple but nice-looking websites.
-              <br>I still have much to learn, which is what keeps my motivation high.</p>
+            <p>In programming, I enjoy most system software development, but I also like backend development
+              <br>I enjoy perfecting my skills and building programming projects to learn new concepts every day !</p>
           </section>
           <section>
             <h3>What I'm doing</h3>
@@ -120,12 +114,12 @@
                 <p>I have worked on a few projects, which you can see in the "Portfolio" tab, usually built with Ruby on Rails</p>
               </div>
               <div class="service">
-                <h5>Fitness Programs</h5>
-                <p>Work in Progress</p>
+                <h5>Lower Level Programming</h5>
+                <p>I enjoy working on low-level programming projects, especially in C</p>
               </div>
               <div class="service">
                 <h5>Automations</h5>
-                <p>Mainly with Python and Ruby, I can try helping you with web-scraping projects, building simple bots etc.</p>
+                <p>Mainly with Ruby, C and some Python, I can try helping you with web-scraping projects, building simple bots etc.</p>
               </div>
             </div>
           </section>
@@ -139,6 +133,18 @@
           <section class="projects">
             <ul class="project-list">
               <li class="project-item">
+                <a href="https://github.com/chaisebasse/TravelFlex" target=”_blank”>
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <i class="fa-regular fa-eye"></i>
+                    </div>
+
+                    <img src="assets/images/TravelFlex.jpg" alt="TravelFlex" loading="lazy">
+                  </figure>
+                </a>
+              </li>
+
+              <li class="project-item">
                 <a href="https://github.com/MartinBlld/la_grosse_grappe" target=”_blank”>
                   <figure class="project-img">
                     <div class="project-item-icon-box">
@@ -151,198 +157,162 @@
               </li>
 
               <li class="project-item">
-                <a href="https://github.com/chaisebasse/TravelFlex" target=”_blank”>
+                <a href="https://github.com/chaisebasse/http-server" target=”_blank”>
                   <figure class="project-img">
                     <div class="project-item-icon-box">
                       <i class="fa-regular fa-eye"></i>
                     </div>
 
-                    <img src="assets/images/TravelFlex.jpg" alt="La Grosse Grappe" loading="lazy">
+                    <img src="assets/images/HTTP-Server.jpg" alt="HTTP Server" loading="lazy">
                   </figure>
                 </a>
               </li>
 
+              <li class="project-item">
+                <a href="https://github.com/chaisebasse/custom_memory_allocator" target=”_blank”>
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <i class="fa-regular fa-eye"></i>
+                    </div>
+
+                    <img src="assets/images/Memory-allocator-thumbnail.jpg" alt="Memory Allocator" loading="lazy">
+                  </figure>
+                </a>
+              </li>
             </ul>
           </section>
         </article>
 
-        <article class="resume" data-page="resume">
+        <article class="projects" data-page="projects">
           <header>
-            <h2 class="article-title"><strong>Resume</strong></h2>
+            <h2 class="article-title"><strong>Projects</strong></h2>
           </header>
 
           <div class="container has-scrollbar">
             <section class="timeline">
-
               <div class="title-wrapper">
                 <div class="icon-box">
-                  <i name="book-outline" class="fa-solid fa-book-open fa-lg" style="color: var(--my-blue);"></i>
+                  <i name="book-outline" class="fa-solid fa-globe fa-lg" style="color: var(--my-blue);"></i>
                 </div>
 
-                <h3 class="h3">Education</h3>
+                <h3 class="h3">Web Development</h3>
               </div>
 
               <ol class="timeline-list">
-
                 <li class="timeline-item">
 
-                  <h4 class="h4 timeline-item-title">Université Paris-Nanterre</h4>
+                  <h4 class="h4 timeline-item-title">TravelFlex</h4>
 
-                  <span>2023-2026</span>
+                  <span>Ruby on Rails</span>
 
                   <p class="timeline-text">
-                    Double Licence Eco-Gestion, Mathématiques-Informatiques appliquées aux Sciences Humaines et Sociales
+                    Group project website that generates traveling ideas based on user-set criteria.<br>
+                    Ran ruby-openai (ruby gem for the OpenAI GPT-3 API) to generate ideas tailored to user needs. Scraped data from Le Routard travel guide website to provide description of the travel destination.<br>
+                    Used 5 models, among which the user (for accounts), travel (destination) and activitiy.
                   </p>
 
                 </li>
 
                 <li class="timeline-item">
 
-                  <h4 class="h4 timeline-item-title">Le Wagon Bootcamp, Paris</h4>
+                  <h4 class="h4 timeline-item-title">La Grosse Grappe</h4>
 
-                  <span>April-June 2023</span>
+                  <span>Ruby on Rails</span>
 
                   <p class="timeline-text">
-                    RNCP level 6 diploma in Web Development <br>
+                    Group project online platform for vineyard rental.<br>
+                    Marketplace app modeled as AirBnb. Made use of devise gem for user authentication and geocoder for precise localisation of vineyards, as well as mapbox API for map marking.<br>
+                    Structured with 3 models : user, grapevine (the vineyard itself) and booking.<br>
                   </p>
 
                 </li>
-
-                <li class="timeline-item">
-
-                  <h4 class="h4 timeline-item-title">Ecole Internationale Bilingue Etoile, Paris</h4>
-
-                  <span>2019-2022</span>
-
-                  <p class="timeline-text">
-                    French Baccalaureat, European section, Mention Assez Bien <br>
-                    Major in Mathematics and Economics <br>
-                    Chinese option as third language
-                  </p>
-
-                </li>
-
               </ol>
 
             </section>
 
             <section class="timeline">
-
               <div class="title-wrapper">
                 <div class="icon-box">
-                  <i name="book-outline" class="fa-solid fa-briefcase fa-lg" style="color: var(--my-blue);"></i>
+                  <i name="book-outline" class="fa-solid fa-computer fa-lg" style="color: var(--my-blue);"></i>
                 </div>
 
-                <h3 class="h3">Experience</h3>
+                <h3 class="h3">System Software Development</h3>
               </div>
 
               <ol class="timeline-list">
 
                 <li class="timeline-item">
 
-                  <h4 class="h4 timeline-item-title">Web Developer (Freelance)</h4>
+                  <h4 class="h4 timeline-item-title">HTTP-Server</h4>
 
-                  <span>2023 — Present</span>
+                  <span>C</span>
 
                   <p class="timeline-text">
-                    Just started
+                    My first system programming project. Implemented a local HTTP server in C handling concurrent requests.<br>
+                    Discovered and understood the complexities of the HTTP protocol and web sockets, as well as the concept of buffers.<br>
+                    Built a simple HTML website to test the server and used threads to allow for multiple clients to connect at the same time.
                   </p>
 
                 </li>
 
                 <li class="timeline-item">
 
-                  <h4 class="h4 timeline-item-title">Association Tirelires d’Avenir</h4>
+                  <h4 class="h4 timeline-item-title">Custom memory allocator</h4>
 
-                  <span>2022-2023</span>
+                  <span>C</span>
 
                   <p class="timeline-text">
-                    Service Civique in a French association helping isolated young underprivileged adults (18-30 years old) establishing social links <br>
-                    Organised and animated the mentoring programme <br>
-                    Developed partnerships with associations, schools, companies
+                    First time building a project deeply involved with memory. This allocator works like malloc.<br>
+                    Understood the intricacies of the various parts of memory, the static part, the stack and the heap.<br>
+                    Used sbrk instead of mmap to increase break point of the data segment. Understood the coalescing logic for fragmented blocks of memory in the heap.
                   </p>
 
                 </li>
-
               </ol>
 
             </section>
 
-            <section class="skill">
-
-              <div class="title-wrapper">
-                <div class="icon-box">
-                  <i name="bolt-outline" class="fa-solid fa-bolt fa-lg" style="color: var(--my-blue);"></i>
-                </div>
-
-                <h3 class="h3">My Skills</h3>
-              </div>
-
-              <ol class="skill-list">
-                <li>
-                  <h5>Languages:</h5>
-                </li>
-
-                <ul>
-                  <li>
-                    <p>French, Italian</p>
-                    <span>Native</span>
-                  </li>
-
-                  <li>
-                    <p>English</p>
-                    <span>Fluent (98/120 on TOEFL test)</span>
-                  </li>
-
-                  <li>
-                    <p>Chinese</p>
-                    <span>limited proficiency (studied 5 years, HSK 2 certificate)</span>
-                  </li>
-                </ul>
-
-                <li>
-                  <h5>IT Skills:</p>
-                </li>
-
-                <ul class="it-skills">
-                  <li>
-                    <p>Good knowledge of <strong style="color: var(--my-light-blue);">Microsoft Office</strong> applications</p>
-                  </li>
-
-                  <li>
-                    <p>Proficient use of Airtable and Google applications</p>
-                  </li>
-
-                  <li>
-                    <p><strong style="color: var(--my-light-blue);">Ruby on Rails</strong> (Intermediate), Python (Beginner)</p>
-                  </li>
-                </ul>
-
-                <li>
-                  <h5>Other Activities:</p>
-                </li>
-
-                <ul class="other-activities">
-                  <li>
-                    <p>Shotokan Karate, Black Belt 1st Dan </p>
-                  </li>
-
-                  <li>
-                    <p>Louvre Museum : museum guide training on history of arts</p>
-                  </li>
-
-                  <li>
-                    <p>Several voluntary work opportunities at Association Laurette Fugain and Action Contre la Faim</p>
-                    <p>Other activities such as Paris Annual Conference Model United Nations (2018) and middle school <br> internship in my neighbourhood bookshop</p>
-                  </li>
-                </ul>
-
-              </ol>
-
-
-            </section>
           </div>
 
+        </article>
+
+        <article class="contact" data-page="contact">
+          <header>
+            <h2 class="article-title"><strong>Contact</strong></h2>
+          </header>
+
+          <div class="contact-content">
+            <div class="map-div">
+              <div id="map"></div>
+              <p id="map-info">If you need to report a bug with the map, please visit : <a href="https://www.openstreetmap.org/fixthemap">https://www.openstreetmap.org/fixthemap</a></p>
+            </div>
+
+            <form class="contact-form container" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xbjnyqqr" method="post">
+              <fieldset class="contact-form-inputs container">
+                <div class="test-one">
+                  <div class="contact-info">
+                    <label class="contact-label" for="full-name">Full name</label>
+                    <input class="small-input" type="text" name="name" placeholder="First and Last" required="">
+                  </div>
+
+                  <div class="contact-info">
+                    <label class="contact-label" for="email-address">Email</label>
+                    <input class="small-input" type="email" name="_replyto" placeholder="email@domain.tld" required="">
+                  </div>
+                </div>
+
+                <div class="large-input-div">
+                  <label class="contact-label" for="message">Message</label>
+                  <textarea class="large-input" rows="5" name="message" placeholder="Type message..." required=""></textarea>
+                  <input class="large-input" type="hidden" name="_subject" value="Contact Form Submission">
+                </div>
+
+                <div class="submit-button-div">
+                  <input class="submit-button" type="submit" value="Send message">
+                </div>
+              </fieldset>
+            </form>
+        	</div>
         </article>
 
       </div>
@@ -351,7 +321,7 @@
     <div class="footer">
       <div class="footer-links">
         <a href="https://github.com/chaisebasse"><i class="fab fa-github"></i></a>
-        <a href=""><i class="fab fa-linkedin"></i></a>
+        <!-- <a href=""><i class="fab fa-linkedin"></i></a> -->
       </div>
       <div class="footer-copyright">
         My Portfolio <i class="fa-solid fa-pizza-slice"></i>
