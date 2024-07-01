@@ -103,7 +103,7 @@
             <p>I'm a French and Italian junior undergraduate in economics and computer science.
               During my free time, I enjoy playing sports, seeing friends and working on programming projects. <br></p>
 
-            <p>In programming, I enjoy most system software development, but I also like backend development
+            <p>In programming, I enjoy most system software development, but I also like backend development. Recently I started getting interested in aerospace computing too !
               <br>I enjoy perfecting my skills and building programming projects to learn new concepts every day !</p>
           </section>
           <section>
@@ -130,36 +130,13 @@
             <h2 class="article-title"><strong>Portfolio</strong></h2>
           </header>
 
-          <section class="projects">
+          <section class="projects has-scrollbar">
             <ul class="project-list">
-              <li class="project-item">
-                <a href="https://github.com/chaisebasse/TravelFlex" target=”_blank”>
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <i class="fa-regular fa-eye"></i>
-                    </div>
-
-                    <img src="assets/images/TravelFlex.jpg" alt="TravelFlex" loading="lazy">
-                  </figure>
-                </a>
-              </li>
-
-              <li class="project-item">
-                <a href="https://github.com/MartinBlld/la_grosse_grappe" target=”_blank”>
-                  <figure class="project-img">
-                    <div class="project-item-icon-box">
-                      <i class="fa-regular fa-eye"></i>
-                    </div>
-
-                    <img src="assets/images/La Grosse Grappe.jpg" alt="La Grosse Grappe" loading="lazy">
-                  </figure>
-                </a>
-              </li>
-
               <li class="project-item">
                 <a href="https://github.com/chaisebasse/http-server" target=”_blank”>
                   <figure class="project-img">
                     <div class="project-item-icon-box">
+                      <h5>HTTP Server</h5>
                       <i class="fa-regular fa-eye"></i>
                     </div>
 
@@ -172,10 +149,50 @@
                 <a href="https://github.com/chaisebasse/custom_memory_allocator" target=”_blank”>
                   <figure class="project-img">
                     <div class="project-item-icon-box">
+                      <h5>Memory Allocator</h5>
                       <i class="fa-regular fa-eye"></i>
                     </div>
 
                     <img src="assets/images/Memory-allocator-thumbnail.jpg" alt="Memory Allocator" loading="lazy">
+                  </figure>
+                </a>
+              </li>
+
+              <li class="project-item">
+                <a href="https://github.com/chaisebasse/Satellite-Tracker" target=”_blank”>
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <h5>Satellite-Tracker</h5>
+                      <i class="fa-regular fa-eye"></i>
+                    </div>
+
+                    <img src="assets/images/satellite_orbit.png" alt="Satellite Tracker" loading="lazy">
+                  </figure>
+                </a>
+              </li>
+
+              <li class="project-item">
+                <a href="https://github.com/chaisebasse/TravelFlex" target=”_blank”>
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <h5>TravelFlex</h5>
+                      <i class="fa-regular fa-eye"></i>
+                    </div>
+
+                    <img src="assets/images/TravelFlex.jpg" alt="TravelFlex" loading="lazy">
+                  </figure>
+                </a>
+              </li>
+
+              <li class="project-item">
+                <a href="https://github.com/MartinBlld/la_grosse_grappe" target=”_blank”>
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <h5>La Grosse Grappe</h5>
+                      <i class="fa-regular fa-eye"></i>
+                    </div>
+
+                    <img src="assets/images/La Grosse Grappe.jpg" alt="La Grosse Grappe" loading="lazy">
                   </figure>
                 </a>
               </li>
@@ -189,6 +206,76 @@
           </header>
 
           <div class="container has-scrollbar">
+            <section class="timeline">
+              <div class="title-wrapper">
+                <div class="icon-box">
+                  <i name="book-outline" class="fa-solid fa-computer fa-lg" style="color: var(--my-blue);"></i>
+                </div>
+
+                <h3 class="h3">System Software Development</h3>
+              </div>
+
+              <ol class="timeline-list">
+
+                <li class="timeline-item">
+
+                  <h4 class="h4 timeline-item-title">Multi-Threaded HTTP Server</h4>
+
+                  <span>C</span>
+
+                  <p class="timeline-text">
+                    My first system programming project. Implemented a local HTTP server in C that handles concurrent requests.<br>
+                    Gained an understanding of the HTTP protocol and web sockets, as well as buffer management.<br>
+                    Built a simple HTML website for server testing and utilized threading to support multiple clients connections simultaneously.
+                  </p>
+
+                </li>
+
+                <li class="timeline-item">
+
+                  <h4 class="h4 timeline-item-title">Custom memory allocator</h4>
+
+                  <span>C</span>
+
+                  <p class="timeline-text">
+                    First time building a project deeply involved with memory. This allocator works like malloc.<br>
+                    Explored memory management, including static memory, the stack and the heap.<br>
+                    Used sbrk instead of mmap to increase break point of the data segment. Understood the coalescing logic for fragmented blocks of memory in the heap.
+                  </p>
+
+                </li>
+              </ol>
+
+            </section>
+
+            <section class="timeline">
+              <div class="title-wrapper">
+                <div class="icon-box">
+                  <i name="book-outline" class="fa-solid fa-rocket fa-lg" style="color: var(--my-blue);"></i>
+                </div>
+
+                <h3 class="h3">Aerospace Computing</h3>
+              </div>
+
+              <ol class="timeline-list">
+
+                <li class="timeline-item">
+
+                  <h4 class="h4 timeline-item-title">Satellite Tracker</h4>
+
+                  <span>Python</span>
+
+                  <p class="timeline-text">
+                    Created a Python script to read TLE data, compute satellite positions, and visualize orbits in 3D. Utilized libraries such as sgp4, datetime, numpy, and matplotlib.<br>
+                    Reads TLE data and computes satellite positions using the SGP4 model.<br>
+                    Visualizes the satellite's orbit around Earth in a 3D plot.
+                  </p>
+
+                </li>
+              </ol>
+
+            </section>
+
             <section class="timeline">
               <div class="title-wrapper">
                 <div class="icon-box">
@@ -206,9 +293,9 @@
                   <span>Ruby on Rails</span>
 
                   <p class="timeline-text">
-                    Group project website that generates traveling ideas based on user-set criteria.<br>
-                    Ran ruby-openai (ruby gem for the OpenAI GPT-3 API) to generate ideas tailored to user needs. Scraped data from Le Routard travel guide website to provide description of the travel destination.<br>
-                    Used 5 models, among which the user (for accounts), travel (destination) and activitiy.
+                    Group project website that generates travel ideas based on user-set criteria.<br>
+                    Integrated ruby-openai gem for the GPT-3 API usage to generate ideas tailored to user needs. Scraped data from Le Routard travel guide website to provide description of the travel destination.<br>
+                    Used 5 models, including user (accounts), travel (destinations) and activitiy.
                   </p>
 
                 </li>
@@ -221,50 +308,8 @@
 
                   <p class="timeline-text">
                     Group project online platform for vineyard rental.<br>
-                    Marketplace app modeled as AirBnb. Made use of devise gem for user authentication and geocoder for precise localisation of vineyards, as well as mapbox API for map marking.<br>
-                    Structured with 3 models : user, grapevine (the vineyard itself) and booking.<br>
-                  </p>
-
-                </li>
-              </ol>
-
-            </section>
-
-            <section class="timeline">
-              <div class="title-wrapper">
-                <div class="icon-box">
-                  <i name="book-outline" class="fa-solid fa-computer fa-lg" style="color: var(--my-blue);"></i>
-                </div>
-
-                <h3 class="h3">System Software Development</h3>
-              </div>
-
-              <ol class="timeline-list">
-
-                <li class="timeline-item">
-
-                  <h4 class="h4 timeline-item-title">HTTP-Server</h4>
-
-                  <span>C</span>
-
-                  <p class="timeline-text">
-                    My first system programming project. Implemented a local HTTP server in C handling concurrent requests.<br>
-                    Discovered and understood the complexities of the HTTP protocol and web sockets, as well as the concept of buffers.<br>
-                    Built a simple HTML website to test the server and used threads to allow for multiple clients to connect at the same time.
-                  </p>
-
-                </li>
-
-                <li class="timeline-item">
-
-                  <h4 class="h4 timeline-item-title">Custom memory allocator</h4>
-
-                  <span>C</span>
-
-                  <p class="timeline-text">
-                    First time building a project deeply involved with memory. This allocator works like malloc.<br>
-                    Understood the intricacies of the various parts of memory, the static part, the stack and the heap.<br>
-                    Used sbrk instead of mmap to increase break point of the data segment. Understood the coalescing logic for fragmented blocks of memory in the heap.
+                    Marketplace app modeled as AirBnb. Made use of devise gem for user authentication and geocoder and mapbox API for precise location marking.<br>
+                    Structured with 3 models : user, grapevine (vineyards) and booking.<br>
                   </p>
 
                 </li>
