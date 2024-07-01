@@ -40,7 +40,7 @@ for (let i = 0; i < projectLinks.length; i++) {
     // Remove highlight after a short delay (e.g., 1 second)
     setTimeout(() => {
       correspondingImage.classList.remove("highlight");
-    }, 300); // Adjust the time in milliseconds as needed
+    }, 400); // Adjust the time in milliseconds as needed
   });
 }
 
